@@ -17,6 +17,7 @@ let loadImage = function() {
 img.onload = loadImage;
 
 let getParallelogram = function() {
+    angle+=0.01
     ctx.clearRect(0, 0, width, height);
 
     farx1 = worldX + Math.cos(angle - fovhalf) * far;
